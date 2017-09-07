@@ -5,11 +5,6 @@ from django.template import loader
 from .models import Question
 
 def hw1(request):
-	"""
-	latest_question_list = Question.objects.order_by('-pub_date')[:5]
-	context = {'latest_question_list':latest_question_list,}
-	return render(request, 'hw1/hw1.html', context)
-	"""
 	template = loader.get_template('hw1/hw1.html')
 	return HttpResponse(template.render())
 

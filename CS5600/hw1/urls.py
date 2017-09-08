@@ -1,4 +1,6 @@
 from django.conf.urls import url
+from django.conf.urls.static import static
+from django.conf import settings
 
 from . import views
 
@@ -14,3 +16,6 @@ urlpatterns = [
 
     url(r'^hw1/latest\.html$', views.hw1),
 ]
+
+if settings.DEBUG is True:
+	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

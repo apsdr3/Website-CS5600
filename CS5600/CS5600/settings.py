@@ -117,10 +117,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-MEDIA_ROOT = '/Users/hedce/Desktop/CS5600/Website-CS5600/CS5600/root/media/'
+# MEDIA_ROOT = '/Users/hedce/Desktop/CS5600/Website-CS5600/CS5600/root/media/'
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 
-STATIC_ROOT = '/Users/hedce/Desktop/CS5600/Website-CS5600/CS5600/root/static/'
+# STATIC_ROOT = '/Users/hedce/Desktop/CS5600/Website-CS5600/CS5600/root/static/'
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]

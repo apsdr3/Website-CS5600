@@ -9,10 +9,10 @@
     <p>No hw1s are available.</p>
 {% endif %}
 -->
-
+{% load static %}
 <html>
 	<h>Hello World!</h>
 	<p>
-		<a href='/media/success.jpg' download="success.jpg">Success</a>
+        <a href="{% static 'success.jpg' %}" download><img src="{% static 'success.jpg' %}" /></a>
 	</p>
 </html>

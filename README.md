@@ -15,11 +15,14 @@ Once your ipaddress is contained inside the ALLOWED_HOST container, you can star
 To start the server, navigate to Website-CS5600/CS5600/
 Here, you can find manage.py
 To run the file, on the terminal/command line, run this line: 
+
 python manage.py runserver ipaddress:port
 or
 python3 manage.py runserver ipaddress:port
 
+
 **NOTE: change <ipaddress> to your ipaddress (also visible in ALLOWED_HOST) and <port> to a desired port (a typical HTTP port is 8080)
+
 
 When ran, you should see something like:
 
@@ -35,3 +38,5 @@ Quit the server with CTRL-BREAK.
 Since the server is running, we can checkout the website.
 Navigate your browser to "ipaddress:port" i.e. "127.0.0.1:8080"
 HW1 can be seen at: "ipaddress:port/hw1" i.e. "127.0.0.1:8080/hw1"
+
+You can see that the the tags are the same when the same page is reloaded, hence, the persistent HTTP connection
